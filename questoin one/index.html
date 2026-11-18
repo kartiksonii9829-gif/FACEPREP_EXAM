@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Tasks</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class ="headingone">
+      <h1>My To-Do List</h1>
+    </div>
+    <p class="intro">Write it down, take it one step at a time.</p>
+
+    <form id="task-form">
+      <input id="task-input" type="text" placeholder="What needs to get done?" aria-label="New task" autocomplete="off">
+      <button class="add-button" type="submit">Add task</button>
+    </form>
+
+    <ul id="task-list" aria-label="Tasks"></ul>
+    <p id="empty-state" class="empty-state">no tasks yet add one above.</p>
+    <p id="summary" class="summary" aria-live="polite"></p>
+  </main>
+</body>
+</html>

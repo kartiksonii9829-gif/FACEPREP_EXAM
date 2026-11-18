@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Finder</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="store">
+    <header class="page-header">
+      <div class ="headingone">
+        <h1>Product Catalogue</h1>
+      </div>
+    </header>
+
+    <section class="filters" aria-label="Product filters">
+      <label class="search-field">
+        <span>Search products</span>
+        <input id="search-input" type="search" placeholder="Try “headphones”" autocomplete="off">
+      </label>
+
+      <label class="category-field">
+        <span>Category</span>
+        <select id="category-filter">
+          <option value="all">All Electronics, Stationary &amp; Fashion</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Stationary">Stationary</option>
+          <option value="Fashion">Fashion</option>
+        </select>
+      </label>
+    </section>
+
+    <p id="results-summary" class="results-summary" aria-live="polite"></p>
+    <section id="product-grid" class="product-grid" aria-label="Products"></section>
+    <p id="empty-state" class="empty-state" hidden>No products found.</p>
+  </main>
+</body>
+</html>
